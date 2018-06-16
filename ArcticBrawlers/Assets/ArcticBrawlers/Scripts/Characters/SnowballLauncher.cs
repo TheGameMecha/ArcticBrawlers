@@ -11,6 +11,7 @@ public class SnowballLauncher : MonoBehaviour {
     [SerializeField]
     private float cooldownSpeed = 2.0f;
     private bool isCoolingDown = false;
+    private bool snowballLoaded = true;
 
     [SerializeField]
     private GameObject snowballPrefab;
@@ -26,19 +27,29 @@ public class SnowballLauncher : MonoBehaviour {
 
     void Start()
     {
+        LoadSnowball();
+        animator = GetComponent<Animator>();
+    }
+
+    public void LoadSnowball()
+    {
         currentSnowball = Instantiate(snowballPrefab, snowballHolder).GetComponent<Snowball>();
         currentSnowball.SetParentBone(snowballHolder);
         currentSnowball.SetLayerMask(gameObject.layer);
-
-        animator = GetComponent<Animator>();
+        snowballLoaded = true;
     }
 
     // Update is called once per frame
     void Update ()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1")) // Throw a snowball
         {
             ThrowSnowball();
+        }
+
+        if (Input.GetButtonDown("Fire2")) // Pickup Snowball
+        {
+            ReloadSnowBall();
         }
 
         if (isCoolingDown)
@@ -73,8 +84,12 @@ public class SnowballLauncher : MonoBehaviour {
         currentSnowball = null;
     }
 
-    public void ReloadSnowBall()
+    private void ReloadSnowBall()
     {
         // TODO: Assign a new snowball to the hand
+        if (snowballLoaded)
+            return;
+
+        animator.SetTrigger("Pickup");
     }
 }
