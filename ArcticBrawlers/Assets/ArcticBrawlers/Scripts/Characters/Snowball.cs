@@ -20,11 +20,6 @@ public class Snowball : MonoBehaviour {
         m_rigidbody.useGravity = false;
         
     }
-    // Update is called once per frame
-    void Update ()
-    {
-		
-	}
 
     public void SetLayerMask(LayerMask mask)
     {
@@ -40,11 +35,6 @@ public class Snowball : MonoBehaviour {
     public void SetMoveSpeed(float value)
     {
         moveSpeed = value;
-    }
-
-    public void SetDirection(Vector3 value)
-    {
-        direction = value;
     }
 
     public void ReleaseMe()

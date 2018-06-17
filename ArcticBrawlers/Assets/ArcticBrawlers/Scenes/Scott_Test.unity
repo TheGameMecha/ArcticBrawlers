@@ -548,6 +548,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.000015258789
       objectReference: {fileID: 0}
+    - target: {fileID: 114800726544396192, guid: ad1bcc8a20ff4b84781da70ee9c4739e,
+        type: 2}
+      propertyPath: rayCastLayers.m_Bits
+      value: 4294959615
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad1bcc8a20ff4b84781da70ee9c4739e, type: 2}
   m_IsPrefabParent: 0
@@ -563,7 +568,7 @@ GameObject:
   - component: {fileID: 898648631}
   - component: {fileID: 898648630}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Backwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

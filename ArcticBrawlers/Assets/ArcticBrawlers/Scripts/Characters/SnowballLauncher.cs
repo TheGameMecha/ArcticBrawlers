@@ -80,6 +80,7 @@ public class SnowballLauncher : MonoBehaviour {
         if (currentSnowball == null)
             return;
 
+        snowballLoaded = false;
         currentSnowball.ReleaseMe();
         currentSnowball = null;
     }
@@ -90,6 +91,7 @@ public class SnowballLauncher : MonoBehaviour {
         if (snowballLoaded)
             return;
 
+        snowballLoaded = true;
         animator.SetTrigger("Pickup");
     }
 }
