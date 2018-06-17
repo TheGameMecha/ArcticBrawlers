@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.ThirdPerson;
+using Luminosity.IO;
 
 public class SnowballLauncher : MonoBehaviour {
 
@@ -42,16 +43,6 @@ public class SnowballLauncher : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (Input.GetButtonDown("Fire1")) // Throw a snowball
-        {
-            ThrowSnowball();
-        }
-
-        if (Input.GetButtonDown("Fire2")) // Pickup Snowball
-        {
-            ReloadSnowBall();
-        }
-
         if (isCoolingDown)
         {
             cooldownTimer += Time.deltaTime;
@@ -85,7 +76,7 @@ public class SnowballLauncher : MonoBehaviour {
         currentSnowball = null;
     }
 
-    private void ReloadSnowBall()
+    public void ReloadSnowBall()
     {
         // TODO: Assign a new snowball to the hand
         if (snowballLoaded)

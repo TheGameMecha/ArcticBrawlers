@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Input version="2">
+  <PlayerOneScheme>06cd669440d0422a95f3e89bd3812515</PlayerOneScheme>
+  <PlayerTwoScheme />
+  <PlayerThreeScheme />
+  <PlayerFourScheme />
+  <ControlScheme name="Player_One" id="06cd669440d0422a95f3e89bd3812515">
+    <Description />
+    <Action name="Horizontal">
+      <Description />
+      <Binding>
+        <Positive>D</Positive>
+        <Negative>A</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Vertical">
+      <Description />
+      <Binding>
+        <Positive>W</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickY</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Pause">
+      <Description />
+      <Binding>
+        <Positive>Pause</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>Start</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Jump">
+      <Description>"A" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionBottom</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Throw">
+      <Description>"X" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionLeft</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Reload">
+      <Description>"B" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionRight</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadOne</GamepadIndex>
+      </Binding>
+    </Action>
+  </ControlScheme>
+  <ControlScheme name="Player_Two" id="6d588967f93f4c8b9c67b3d20d5031ec">
+    <Description />
+    <Action name="Horizontal">
+      <Description />
+      <Binding>
+        <Positive>D</Positive>
+        <Negative>A</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Vertical">
+      <Description />
+      <Binding>
+        <Positive>W</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickY</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Pause">
+      <Description />
+      <Binding>
+        <Positive>Pause</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>Start</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Jump">
+      <Description>"A" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionBottom</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Throw">
+      <Description>"X" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionLeft</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Reload">
+      <Description>"B" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionRight</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadTwo</GamepadIndex>
+      </Binding>
+    </Action>
+  </ControlScheme>
+  <ControlScheme name="Player_Three" id="8a12a0044e8e475d8044934fdf87a3d1">
+    <Description />
+    <Action name="Horizontal">
+      <Description />
+      <Binding>
+        <Positive>D</Positive>
+        <Negative>A</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Vertical">
+      <Description />
+      <Binding>
+        <Positive>W</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickY</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Pause">
+      <Description />
+      <Binding>
+        <Positive>Pause</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>Start</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Jump">
+      <Description>"A" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionBottom</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Throw">
+      <Description>"X" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionLeft</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Reload">
+      <Description>"B" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionRight</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadThree</GamepadIndex>
+      </Binding>
+    </Action>
+  </ControlScheme>
+  <ControlScheme name="Player_Four" id="2d17572a492f426faaee8cf42a33c6ec">
+    <Description />
+    <Action name="Horizontal">
+      <Description />
+      <Binding>
+        <Positive>D</Positive>
+        <Negative>A</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Vertical">
+      <Description />
+      <Binding>
+        <Positive>W</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0.1</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadAxis</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>LeftStick</GamepadButton>
+        <GamepadAxis>LeftThumbstickY</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Pause">
+      <Description />
+      <Binding>
+        <Positive>Pause</Positive>
+        <Negative>S</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>3</Gravity>
+        <Sensitivity>3</Sensitivity>
+        <Snap>true</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>Start</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Jump">
+      <Description>"A" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionBottom</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Throw">
+      <Description>"X" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionLeft</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+    <Action name="Reload">
+      <Description>"B" Button on Xbox</Description>
+      <Binding>
+        <Positive>None</Positive>
+        <Negative>None</Negative>
+        <DeadZone>0</DeadZone>
+        <Gravity>1</Gravity>
+        <Sensitivity>1</Sensitivity>
+        <Snap>false</Snap>
+        <Invert>false</Invert>
+        <Type>GamepadButton</Type>
+        <Axis>0</Axis>
+        <Joystick>0</Joystick>
+        <GamepadButton>ActionRight</GamepadButton>
+        <GamepadAxis>LeftThumbstickX</GamepadAxis>
+        <GamepadIndex>GamepadFour</GamepadIndex>
+      </Binding>
+    </Action>
+  </ControlScheme>
+</Input>
