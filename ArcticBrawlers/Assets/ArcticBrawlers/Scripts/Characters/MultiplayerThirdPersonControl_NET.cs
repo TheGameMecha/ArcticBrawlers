@@ -5,11 +5,13 @@ using UnityEngine.Networking;
 using UnityStandardAssets.Characters.ThirdPerson;
 using Luminosity.IO;
 
-[RequireComponent(typeof(ThirdPersonCharacter))]
-public class MultiplayerThirdPersonControl : MonoBehaviour {
+
+
+public class MultiplayerThirdPersonControl_NET : NetworkBehaviour
+{
 
     public PlayerID playerID;
-    private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
+    private ThirdPersonCharacter_NET m_Character; // A reference to the ThirdPersonCharacter on the object
     private SnowballLauncher m_snowballLauncher; // A reference to the SnowballLauncher on the object
 
     private Transform m_Cam;                  // A reference to the main camera in the scenes transform
@@ -19,11 +21,11 @@ public class MultiplayerThirdPersonControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //if(!isLocalPlayer)
-        //{
-        //    Destroy(this);
-        //    return;
-        //}
+        if (!isLocalPlayer)
+        {
+            Destroy(this);
+            return;
+        }
 
         // get the transform of the main camera
         if (Camera.main != null)
@@ -38,7 +40,7 @@ public class MultiplayerThirdPersonControl : MonoBehaviour {
         }
 
         // get the third person character ( this should never be null due to require component )
-        m_Character = GetComponent<ThirdPersonCharacter>();
+        m_Character = GetComponent<ThirdPersonCharacter_NET>();
         m_snowballLauncher = GetComponent<SnowballLauncher>();
     }
 	

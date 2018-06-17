@@ -6,7 +6,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
-	public class ThirdPersonCharacter : MonoBehaviour
+	public class ThirdPersonCharacter_NET : NetworkBehaviour
 	{
 		[SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
@@ -30,11 +30,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
-
+        
 
 		void Start()
 		{
-           
+            if (!isLocalPlayer)
+            {
+                Destroy(this);
+                
+                return;
+            }
 
             m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();

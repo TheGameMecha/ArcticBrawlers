@@ -17,6 +17,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         
         private void Start()
         {
+            //if(!isLocalPlayer)
+            //{
+            //    Destroy(this);
+            //    return;
+            //}
             // get the transform of the main camera
             if (Camera.main != null)
             {
@@ -47,8 +52,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private void FixedUpdate()
         {
             // read inputs
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
+            float h = Input.GetAxis("Horizontal");
+            float v = Input.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
 
             // calculate move direction to pass to character
