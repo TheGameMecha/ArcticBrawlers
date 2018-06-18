@@ -15,7 +15,9 @@ public class MultiplayerThirdPersonControl : MonoBehaviour {
     private Transform m_Cam;                  // A reference to the main camera in the scenes transform
     private Vector3 m_CamForward;             // The current forward direction of the camera
     private Vector3 m_Move;                   // the world-relative desired move direction, calculated from the camForward and user input.
-    private bool m_Jump;                      
+    private bool m_Jump;
+
+    private bool isDead = true;
 
     // Use this for initialization
     void Start () {
@@ -45,8 +47,10 @@ public class MultiplayerThirdPersonControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        // Jump
+        if (isDead)
+            return;
 
+        // Jump
         if (!m_Jump)
         {
             m_Jump = Luminosity.IO.InputManager.GetButtonDown("Jump", playerID);
@@ -87,5 +91,30 @@ public class MultiplayerThirdPersonControl : MonoBehaviour {
         // pass all parameters to the character control script
         m_Character.Move(m_Move, crouch, m_Jump);
         m_Jump = false;
+    }
+
+    public void SetPlayerID(PlayerID newID)
+    {
+        playerID = newID;
+    }
+
+    public PlayerID GetPlayerID()
+    {
+        return playerID;
+    }
+
+    public void SetLayerMask(LayerMask layer)
+    {
+        gameObject.layer = layer;
+    }
+
+    public void SetDeadState(bool value)
+    {
+        isDead = value;
+    }
+
+    public bool GetDeadState()
+    {
+        return isDead;
     }
 }

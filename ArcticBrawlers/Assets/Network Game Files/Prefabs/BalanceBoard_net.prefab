@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114099233657462302}
   - component: {fileID: 114415778200814600}
   m_Layer: 0
-  m_Name: BalanceBoard
+  m_Name: BalanceBoard_net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

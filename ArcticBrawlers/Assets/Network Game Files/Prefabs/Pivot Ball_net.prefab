@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114520052998698986}
   - component: {fileID: 114938116773601838}
   m_Layer: 0
-  m_Name: Pivot Ball
+  m_Name: Pivot Ball_net
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
