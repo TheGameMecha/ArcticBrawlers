@@ -579,18 +579,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_controlSchemes:
   - m_name: Player_One
-    m_description: 
+    m_description: "Bindings for player 1. \n\nIncludes XInput, Keyboard WASD and
+      Standard Input."
     m_isExpanded: 1
     m_uniqueID: 06cd669440d0422a95f3e89bd3812515
     m_actions:
     - m_name: Horizontal
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 100
         m_negative: 97
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
         m_invert: 0
         m_type: 6
@@ -612,18 +613,57 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 5
+        m_axis: 5
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 4
+        m_gamepadIndex: 0
     - m_name: Vertical
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 119
         m_negative: 115
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
-        m_invert: 0
+        m_invert: 1
         m_type: 6
-        m_axis: 0
+        m_axis: 1
         m_joystick: 0
         m_gamepadButton: 0
         m_gamepadAxis: 1
@@ -641,22 +681,48 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 6
+        m_axis: 6
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 1
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 5
+        m_gamepadIndex: 0
     - m_name: Pause
       m_description: 
       m_bindings:
-      - m_positive: 19
-        m_negative: 115
-        m_deadZone: 0
-        m_gravity: 3
-        m_sensitivity: 3
-        m_snap: 1
-        m_invert: 0
-        m_type: 7
-        m_axis: 0
-        m_joystick: 0
-        m_gamepadButton: 9
-        m_gamepadAxis: 0
-        m_gamepadIndex: 0
       - m_positive: 19
         m_negative: 0
         m_deadZone: 0
@@ -670,22 +736,35 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 0
-    - m_name: Jump
-      m_description: '"A" Button on Xbox'
-      m_bindings:
-      - m_positive: 0
+      - m_positive: 357
         m_negative: 0
         m_deadZone: 0
         m_gravity: 1
         m_sensitivity: 1
         m_snap: 0
         m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 19
+        m_negative: 115
+        m_deadZone: 0
+        m_gravity: 3
+        m_sensitivity: 3
+        m_snap: 1
+        m_invert: 0
         m_type: 7
         m_axis: 0
         m_joystick: 0
-        m_gamepadButton: 10
+        m_gamepadButton: 9
         m_gamepadAxis: 0
         m_gamepadIndex: 0
+    - m_name: Jump
+      m_description: '"A" Button on Xbox'
+      m_bindings:
       - m_positive: 32
         m_negative: 0
         m_deadZone: 0
@@ -699,9 +778,61 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 0
+      - m_positive: 350
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 7
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 10
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
     - m_name: Throw
       m_description: '"X" Button on Xbox'
       m_bindings:
+      - m_positive: 113
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 352
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -715,35 +846,9 @@ MonoBehaviour:
         m_gamepadButton: 12
         m_gamepadAxis: 0
         m_gamepadIndex: 0
-      - m_positive: 103
-        m_negative: 0
-        m_deadZone: 0
-        m_gravity: 1
-        m_sensitivity: 1
-        m_snap: 0
-        m_invert: 0
-        m_type: 0
-        m_axis: 0
-        m_joystick: 0
-        m_gamepadButton: 0
-        m_gamepadAxis: 0
-        m_gamepadIndex: 0
     - m_name: Reload
       m_description: '"B" Button on Xbox'
       m_bindings:
-      - m_positive: 0
-        m_negative: 0
-        m_deadZone: 0
-        m_gravity: 1
-        m_sensitivity: 1
-        m_snap: 0
-        m_invert: 0
-        m_type: 7
-        m_axis: 0
-        m_joystick: 0
-        m_gamepadButton: 11
-        m_gamepadAxis: 0
-        m_gamepadIndex: 0
       - m_positive: 114
         m_negative: 0
         m_deadZone: 0
@@ -757,20 +862,86 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 0
+      - m_positive: 351
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 7
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 11
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
   - m_name: Player_Two
-    m_description: 
+    m_description: "Bindings for player 2. \n\nIncludes XInput, Keyboard IJKL and
+      Standard Input."
     m_isExpanded: 1
-    m_uniqueID: 6d588967f93f4c8b9c67b3d20d5031ec
+    m_uniqueID: 6727a64dc7564a11ac4858a87702e832
     m_actions:
     - m_name: Horizontal
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 100
         m_negative: 97
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 0
+        m_type: 6
+        m_axis: 0
+        m_joystick: 1
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 108
+        m_negative: 106
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 2
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 5
+        m_axis: 5
+        m_joystick: 1
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -778,15 +949,67 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 1
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 4
+        m_gamepadIndex: 1
     - m_name: Vertical
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 119
         m_negative: 115
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 1
+        m_type: 6
+        m_axis: 1
+        m_joystick: 1
+        m_gamepadButton: 0
+        m_gamepadAxis: 1
+        m_gamepadIndex: 0
+      - m_positive: 105
+        m_negative: 107
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 2
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 6
+        m_axis: 6
+        m_joystick: 1
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -794,9 +1017,48 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 1
         m_gamepadIndex: 1
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 5
+        m_gamepadIndex: 1
     - m_name: Pause
       m_description: 
       m_bindings:
+      - m_positive: 19
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 377
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 19
         m_negative: 115
         m_deadZone: 0
@@ -813,6 +1075,32 @@ MonoBehaviour:
     - m_name: Jump
       m_description: '"A" Button on Xbox'
       m_bindings:
+      - m_positive: 13
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 370
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -829,6 +1117,32 @@ MonoBehaviour:
     - m_name: Throw
       m_description: '"X" Button on Xbox'
       m_bindings:
+      - m_positive: 121
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 372
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -845,6 +1159,32 @@ MonoBehaviour:
     - m_name: Reload
       m_description: '"B" Button on Xbox'
       m_bindings:
+      - m_positive: 105
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 371
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -859,19 +1199,48 @@ MonoBehaviour:
         m_gamepadAxis: 0
         m_gamepadIndex: 1
   - m_name: Player_Three
-    m_description: 
+    m_description: 'Bindings for player 3
+
+
+      Includes XInput and Standard Input.'
     m_isExpanded: 1
-    m_uniqueID: 8a12a0044e8e475d8044934fdf87a3d1
+    m_uniqueID: 85e5a974e79d4b41992ce9d000e9bfd8
     m_actions:
     - m_name: Horizontal
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 100
         m_negative: 97
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 0
+        m_type: 6
+        m_axis: 0
+        m_joystick: 2
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 5
+        m_axis: 5
+        m_joystick: 2
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -879,15 +1248,54 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 2
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 4
+        m_gamepadIndex: 2
     - m_name: Vertical
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 119
         m_negative: 115
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 1
+        m_type: 6
+        m_axis: 1
+        m_joystick: 2
+        m_gamepadButton: 0
+        m_gamepadAxis: 1
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 6
+        m_axis: 6
+        m_joystick: 2
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -895,9 +1303,35 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 1
         m_gamepadIndex: 2
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 5
+        m_gamepadIndex: 2
     - m_name: Pause
       m_description: 
       m_bindings:
+      - m_positive: 397
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 19
         m_negative: 115
         m_deadZone: 0
@@ -914,6 +1348,19 @@ MonoBehaviour:
     - m_name: Jump
       m_description: '"A" Button on Xbox'
       m_bindings:
+      - m_positive: 390
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -930,6 +1377,19 @@ MonoBehaviour:
     - m_name: Throw
       m_description: '"X" Button on Xbox'
       m_bindings:
+      - m_positive: 392
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -946,6 +1406,19 @@ MonoBehaviour:
     - m_name: Reload
       m_description: '"B" Button on Xbox'
       m_bindings:
+      - m_positive: 391
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -960,19 +1433,48 @@ MonoBehaviour:
         m_gamepadAxis: 0
         m_gamepadIndex: 2
   - m_name: Player_Four
-    m_description: 
+    m_description: 'Bindings for player 4
+
+
+      Includes XInput and Standard Input.'
     m_isExpanded: 1
-    m_uniqueID: 2d17572a492f426faaee8cf42a33c6ec
+    m_uniqueID: 912e9157719149be8c60c0991d4933b8
     m_actions:
     - m_name: Horizontal
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 100
         m_negative: 97
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 0
+        m_type: 6
+        m_axis: 0
+        m_joystick: 3
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 5
+        m_axis: 5
+        m_joystick: 3
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -980,15 +1482,54 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 0
         m_gamepadIndex: 3
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 4
+        m_gamepadIndex: 3
     - m_name: Vertical
-      m_description: 
+      m_description: Includes support for D-Pad
       m_bindings:
       - m_positive: 119
         m_negative: 115
-        m_deadZone: 0.1
+        m_deadZone: 0.2
         m_gravity: 3
-        m_sensitivity: 3
+        m_sensitivity: 1
         m_snap: 1
+        m_invert: 1
+        m_type: 6
+        m_axis: 1
+        m_joystick: 3
+        m_gamepadButton: 0
+        m_gamepadAxis: 1
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 6
+        m_axis: 6
+        m_joystick: 3
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
         m_invert: 0
         m_type: 9
         m_axis: 0
@@ -996,9 +1537,35 @@ MonoBehaviour:
         m_gamepadButton: 0
         m_gamepadAxis: 1
         m_gamepadIndex: 3
+      - m_positive: 0
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 9
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 5
+        m_gamepadIndex: 3
     - m_name: Pause
       m_description: 
       m_bindings:
+      - m_positive: 417
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 19
         m_negative: 115
         m_deadZone: 0
@@ -1015,6 +1582,19 @@ MonoBehaviour:
     - m_name: Jump
       m_description: '"A" Button on Xbox'
       m_bindings:
+      - m_positive: 410
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -1031,6 +1611,19 @@ MonoBehaviour:
     - m_name: Throw
       m_description: '"X" Button on Xbox'
       m_bindings:
+      - m_positive: 412
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -1047,6 +1640,19 @@ MonoBehaviour:
     - m_name: Reload
       m_description: '"B" Button on Xbox'
       m_bindings:
+      - m_positive: 411
+        m_negative: 0
+        m_deadZone: 0
+        m_gravity: 1
+        m_sensitivity: 1
+        m_snap: 0
+        m_invert: 0
+        m_type: 0
+        m_axis: 0
+        m_joystick: 0
+        m_gamepadButton: 0
+        m_gamepadAxis: 0
+        m_gamepadIndex: 0
       - m_positive: 0
         m_negative: 0
         m_deadZone: 0
@@ -1061,9 +1667,9 @@ MonoBehaviour:
         m_gamepadAxis: 0
         m_gamepadIndex: 3
   m_playerOneDefault: 06cd669440d0422a95f3e89bd3812515
-  m_playerTwoDefault: 6d588967f93f4c8b9c67b3d20d5031ec
-  m_playerThreeDefault: 8a12a0044e8e475d8044934fdf87a3d1
-  m_playerFourDefault: 2d17572a492f426faaee8cf42a33c6ec
+  m_playerTwoDefault: 6727a64dc7564a11ac4858a87702e832
+  m_playerThreeDefault: 85e5a974e79d4b41992ce9d000e9bfd8
+  m_playerFourDefault: 912e9157719149be8c60c0991d4933b8
   m_ignoreTimescale: 1
 --- !u!4 &1755499064
 Transform:
