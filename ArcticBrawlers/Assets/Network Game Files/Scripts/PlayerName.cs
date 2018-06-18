@@ -10,7 +10,7 @@ public class PlayerName : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log(playerName);
+        Debug.Log(playerName + " has loaded into the game.");
 	}
 	
 	

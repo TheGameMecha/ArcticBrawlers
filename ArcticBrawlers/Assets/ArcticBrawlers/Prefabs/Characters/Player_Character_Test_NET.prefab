@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_SendInterval: 0.1
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
-  m_SyncSpin: 0
+  m_SyncSpin: 1
   m_MovementTheshold: 0.001
   m_VelocityThreshold: 0.0001
   m_SnapThreshold: 5
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1661f5a3021b45944a02a2e4ebcc3b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: 
+  playerName: Player
 --- !u!114 &114850530581091160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2659,7 +2659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Animator: {fileID: 95615675777024194}
-  m_ParameterSendBits: 255
+  m_ParameterSendBits: 251
   param0: 
   param1: 
   param2: 

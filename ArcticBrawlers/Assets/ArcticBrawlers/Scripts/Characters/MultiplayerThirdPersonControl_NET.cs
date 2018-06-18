@@ -17,10 +17,11 @@ public class MultiplayerThirdPersonControl_NET : NetworkBehaviour
     private Transform m_Cam;                  // A reference to the main camera in the scenes transform
     private Vector3 m_CamForward;             // The current forward direction of the camera
     private Vector3 m_Move;                   // the world-relative desired move direction, calculated from the camForward and user input.
-    private bool m_Jump;                      
+    private bool m_Jump;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         if (!isLocalPlayer)
         {
             Destroy(this);
@@ -43,9 +44,10 @@ public class MultiplayerThirdPersonControl_NET : NetworkBehaviour
         m_Character = GetComponent<ThirdPersonCharacter_NET>();
         m_snowballLauncher = GetComponent<SnowballLauncher>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
 
         // Jump
 
@@ -54,7 +56,7 @@ public class MultiplayerThirdPersonControl_NET : NetworkBehaviour
             m_Jump = Luminosity.IO.InputManager.GetButtonDown("Jump", playerID);
         }
 
-        if (Luminosity.IO.InputManager.GetButtonDown("Throw",playerID)) // Throw a snowball
+        if (Luminosity.IO.InputManager.GetButtonDown("Throw", playerID)) // Throw a snowball
         {
             m_snowballLauncher.ThrowSnowball();
         }
