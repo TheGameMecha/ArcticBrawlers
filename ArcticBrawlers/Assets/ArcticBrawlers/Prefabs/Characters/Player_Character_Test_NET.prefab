@@ -900,6 +900,7 @@ GameObject:
   - component: {fileID: 114058159402418588}
   - component: {fileID: 114850530581091160}
   - component: {fileID: 114037873017978294}
+  - component: {fileID: 114652173065057546}
   m_Layer: 9
   m_Name: Player_Character_Test_NET
   m_TagString: Untagged
@@ -2634,6 +2635,18 @@ MonoBehaviour:
   snowballPrefab: {fileID: 1328492041665300, guid: 6ba7d81b91eaec94aa049593bc336414,
     type: 2}
   snowballHolder: {fileID: 4350665099378366}
+--- !u!114 &114652173065057546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1718195289087324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1661f5a3021b45944a02a2e4ebcc3b23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: 
 --- !u!114 &114850530581091160
 MonoBehaviour:
   m_ObjectHideFlags: 1
