@@ -18,7 +18,8 @@ public class Snowball : MonoBehaviour {
     {
         m_rigidbody = GetComponent<Rigidbody>();
         m_rigidbody.useGravity = false;
-        
+        m_rigidbody.isKinematic = true;
+
     }
 
     public void SetLayerMask(LayerMask mask)

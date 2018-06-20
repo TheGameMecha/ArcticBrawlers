@@ -42,11 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
             m_OrigGroundCheckDistance = m_GroundCheckDistance;
         }
-        void Start()
-		{
-
-
-		}
+ 
 		public void Move(Vector3 move, bool crouch, bool jump)
 		{
 
@@ -225,5 +221,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.applyRootMotion = false;
 			}
 		}
+
+        public void ApplyIcePhysics(Vector3 value)
+        {
+            if (m_IsGrounded == true)
+            {
+                m_Rigidbody.AddForce(value, ForceMode.Acceleration);
+            }
+        }
 	}
 }
