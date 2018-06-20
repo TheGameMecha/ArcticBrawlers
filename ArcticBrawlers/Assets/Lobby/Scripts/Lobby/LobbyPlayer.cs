@@ -24,6 +24,7 @@ namespace Prototype.NetworkLobby
         public GameObject localIcone;
         public GameObject remoteIcone;
 
+        PlayerNameInput pName;
         //public GameObject 
 
         //OnMyName function will be invoked on clients when server change the value of playerName
@@ -56,11 +57,14 @@ namespace Prototype.NetworkLobby
             if (isLocalPlayer)
             {
                 SetupLocalPlayer();
+               
             }
             else
             {
                 SetupOtherPlayer();
             }
+
+            if (LobbyManager.s_Singleton != null) pName = LobbyManager.s_Singleton.mainMenuPanel.GetComponent<PlayerNameInput>();
 
             //setup the player data on UI. The value are SyncVar so the player
             //will be created with the right value currently on server
@@ -103,7 +107,7 @@ namespace Prototype.NetworkLobby
 
         void SetupLocalPlayer()
         {
-            nameInput.interactable = true;
+            nameInput.interactable = false;
             remoteIcone.gameObject.SetActive(false);
             localIcone.gameObject.SetActive(true);
 
@@ -120,7 +124,7 @@ namespace Prototype.NetworkLobby
             //have to use child count of player prefab already setup as "this.slot" is not set yet
             if (playerName == "")
                 CmdNameChanged("Player" + (LobbyPlayerList._instance.playerListContentTransform.childCount-1));
-
+            Debug.Log(playerName + " has joined the lobby");
             //we switch from simple name display to name input
             colorButton.interactable = true;
             nameInput.interactable = true;
@@ -187,6 +191,7 @@ namespace Prototype.NetworkLobby
 
         public void OnMyName(string newName)
         {
+            newName = pName.pName;
             playerName = newName;
             nameInput.text = playerName;
         }
