@@ -64,7 +64,7 @@ namespace Prototype.NetworkLobby
                 SetupOtherPlayer();
             }
 
-            if (LobbyManager.s_Singleton != null) pName = LobbyManager.s_Singleton.mainMenuPanel.GetComponent<PlayerNameInput>();
+           
 
             //setup the player data on UI. The value are SyncVar so the player
             //will be created with the right value currently on server
@@ -191,7 +191,7 @@ namespace Prototype.NetworkLobby
 
         public void OnMyName(string newName)
         {
-            newName = pName.pName;
+            newName = PlayerPrefs.GetString("name");
             playerName = newName;
             nameInput.text = playerName;
         }

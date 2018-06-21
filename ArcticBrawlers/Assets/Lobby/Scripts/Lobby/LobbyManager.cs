@@ -23,7 +23,6 @@ namespace Prototype.NetworkLobby
         [Space]
         [Header("UI Reference")]
         public LobbyTopPanel topPanel;
-
         public RectTransform mainMenuPanel;
         public RectTransform lobbyPanel;
 
@@ -58,6 +57,7 @@ namespace Prototype.NetworkLobby
             s_Singleton = this;
             _lobbyHooks = GetComponent<Prototype.NetworkLobby.LobbyHook>();
             currentPanel = mainMenuPanel;
+           // lobbyPanel.gameObject.SetActive(true);
 
             backButton.gameObject.SetActive(false);
             GetComponent<Canvas>().enabled = true;
@@ -109,7 +109,7 @@ namespace Prototype.NetworkLobby
             {
                 ChangeTo(null);
 
-                Destroy(GameObject.Find("MainMenuUI(Clone)"));
+                Destroy(GameObject.Find("mainMenuPanel(Clone)"));
 
                 //backDelegate = StopGameClbk;
                 topPanel.isInGame = true;
