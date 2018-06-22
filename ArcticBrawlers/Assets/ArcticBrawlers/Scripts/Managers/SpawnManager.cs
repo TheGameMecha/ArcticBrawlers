@@ -19,8 +19,27 @@ public class SpawnManager : MonoBehaviour {
     private PlayerID[] playerIDs = new PlayerID[] {PlayerID.One, PlayerID.Two, PlayerID.Three, PlayerID.Four};
     private LayerMask[] layerMasks = new LayerMask[] {9,10,11,12}; // 9-12 are the indexes of the layer masks in editor
 
-	// Use this for initialization
-	void Start ()
+    public static SpawnManager Instance { get; private set; }
+
+    // Called on object creation
+    void Awake()
+    {
+        // Singleton pattern
+        // Makes sure there is only ever one GameManager object
+        // Since we store data in this, we need to make sure it is used in the preload scene ONLY
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Debug.Log("Warning: multiple " + this + " in scene!");
+            Destroy(gameObject);
+        }
+    }
+
+    // Use this for initialization
+    void Start ()
     {
         currentPlayers = GameManager.Instance.GetMaxPlayers();
         SpawnPlayers();
@@ -31,6 +50,7 @@ public class SpawnManager : MonoBehaviour {
         if (currentPlayers <= 1)
         {
             // TODO: End the game and award a point to the victor
+            GameManager.Instance.LoadLevel(2);
         }
     }
 
@@ -54,5 +74,11 @@ public class SpawnManager : MonoBehaviour {
     public void SetNumPlayers(int value)
     {
         currentPlayers = value;
+    }
+
+    public void KillPlayer(MultiplayerThirdPersonControl player)
+    {
+        player.SetDeadState(true);
+        currentPlayers -= 1;
     }
 }

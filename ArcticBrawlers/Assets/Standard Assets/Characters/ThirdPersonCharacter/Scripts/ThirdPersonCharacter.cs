@@ -229,5 +229,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Rigidbody.AddForce(value, ForceMode.Acceleration);
             }
         }
+
+        public void KnockBack(Vector3 snowballPosition, float force)
+        {
+            m_Rigidbody.AddForce(snowballPosition * force, ForceMode.VelocityChange);
+        }
 	}
 }

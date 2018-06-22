@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/ArcticBrawlers/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/SampleScenes/Scenes/NetworkLobby.unity
+    path: Assets/Network Game Files/Scenes/NetworkLobby.unity
     guid: 3c0d76c55eed6214f9d3b070caede5d3
   - enabled: 1
     path: Assets/Network Game Files/Scenes/Test.unity
     guid: d210d212b60a68944a08aff24818ecce
+  - enabled: 1
+    path: Assets/ArcticBrawlers/Scenes/Scott_Test.unity
+    guid: a0351ca5f6c5cfb46a171e580fb8ee81

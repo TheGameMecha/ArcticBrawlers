@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // TODO: Make sure the object is spawned in the "Preload" scene (scene 0 in build index)
 // This preload scene will only be loaded once when the game starts
@@ -41,5 +42,10 @@ public class GameManager : MonoBehaviour {
     public int GetMaxPlayers()
     {
         return maxPlayers;
+    }
+
+    public void LoadLevel(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }
